@@ -13,18 +13,20 @@ SOURCES += \
 QML_IMPORT_PATH += $$PWD
 
 
-qml_components.files = \
-    CustomButtons/qmldir \
-    CustomButtons/YellowButton.qml \
-    CustomButtons/RedButton.qml \
-    CustomButtons/GreenButton.qml \
-    CustomButtons/GrayButton.qml
-qml_components.prefix = /qt/qml
+# qml_components.files = \
+#     CustomButtons/qmldir \
+#     CustomButtons/YellowButton.qml \
+#     CustomButtons/RedButton.qml \
+#     CustomButtons/GreenButton.qml \
+#     CustomButtons/GrayButton.qml
+# qml_components.prefix = /qt/qml
 
-qml_files.files = main.qml
-qml_files.prefix = /qt/qml
+# qml_files.files = main.qml
+# qml_files.prefix = /qt/qml
 
-RESOURCES += qml_components qml_files
+# RESOURCES += qml_components qml_files
+
+RESOURCES += qml.qrc
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
