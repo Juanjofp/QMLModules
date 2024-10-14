@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>GrayButton.qml</file>
-        <file>GreenButton.qml</file>
-        <file>qmldir</file>
-        <file>RedButton.qml</file>
-        <file>YellowButton.qml</file>
-    </qresource>
-</RCC>

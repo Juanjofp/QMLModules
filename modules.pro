@@ -3,23 +3,16 @@ QT += quick
 SOURCES += \
         main.cpp
 
-resources.files = main.qml
-resources.prefix = /$${TARGET}
-RESOURCES += resources CustomButtons
+RESOURCES += qml.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
-# QML_IMPORT_PATH = $PWD
-QML2_IMPORT_PATH = $PWD
-
-QML_IMPORT_PATH += $$PWD/custom_buttons
-QML2_IMPORT_PATH += $$PWD/custom_buttons
-
-message("Path>>>" $$QML_IMPORT_PATH)
+QML_IMPORT_PATH = $$PWD
 
 # Additional import path used to resolve QML modules just for Qt Quick Designer
 QML_DESIGNER_IMPORT_PATH =
 
-DISTFILES += $$PWD/custom_buttons/qmldir
+# Solves path issue: https://forum.qt.io/topic/102344/dependent-that-clearly-exists-does-not-exist-error-when-building-qt-creator-project/21
+QMAKE_PROJECT_DEPTH = 0
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
