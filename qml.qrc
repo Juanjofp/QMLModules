@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/qt/qml">
+        <file>main.qml</file>
+        <file>CustomButtons/GrayButton.qml</file>
+        <file>CustomButtons/GreenButton.qml</file>
+        <file>CustomButtons/qmldir</file>
+        <file>CustomButtons/RedButton.qml</file>
+        <file>CustomButtons/YellowButton.qml</file>
+    </qresource>
+</RCC>

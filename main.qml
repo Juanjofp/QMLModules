@@ -1,5 +1,5 @@
 import QtQuick
-import CustomButtons 1.0
+import CustomButtons
 
 Window {
     width: 640
